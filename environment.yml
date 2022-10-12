@@ -1,0 +1,16 @@
+name: babynames
+channels:
+  - defaults
+dependencies:
+  - python=3
+  - pytorch
+  - torchvision
+  - cudatoolkit=11.6
+  - torchaudio
+  - scrapy
+  - ipykernel
+  - matplotlib
+  - pandas
+  - torchtext
+  - scikit-learn
+prefix: /home/rayed/anaconda3/envs/babynames
