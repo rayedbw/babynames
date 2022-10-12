@@ -17,7 +17,8 @@ class BabynamesSpider(scrapy.Spider):
             yield {
                 'name': row.xpath('./td/a/text()').get(),
                 'meaning': row.xpath('./td/text()').get(),
-                'gender': 'girl'
+                'gender': 'girl',
+                'ethnicity': "muslim"
             }
 
         next_page = response.xpath("//nav[@class='pagination']/a[contains(text(), 'Next')]/@href").get()
